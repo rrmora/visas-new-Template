@@ -4,8 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { PagesComponent } from './pages.component';
-import { ContentLayoutComponent } from '../shared/components/layout/content-layout/content-layout.component';
-import { HeaderComponent } from '../shared/components/header/header.component';
+import { TreeTableModule } from 'primeng/treetable';
 
 @NgModule({
   declarations: [
@@ -15,6 +14,7 @@ import { HeaderComponent } from '../shared/components/header/header.component';
   imports: [
     CommonModule,
     SharedModule,
+    TreeTableModule,
     PAGES_ROUTES
   ],
   exports: [
